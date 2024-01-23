@@ -14,7 +14,7 @@ public class CartItem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne
     Product product; // the product our client is shopping
     Integer count; // the number of items in the cart of the same product
 
